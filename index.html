@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaFest</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/DaFest-logo2-def.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="top-nav" id="top-nav">
+            <a href="#" class="logo">DaFest</a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Line Up</a></li>
+                <li><a href="./pages/tickets.html">Tickets</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Koop Tickets</a></li>
+            </ul>
+        </nav>
+
+        <div class="container-countdown">
+            <h1 id="headline">Volgende festival DaFest!</h1>
+            <h3 id="under-headline">13, 14, 15 Mei 2022, <br> van Termunt Tervuren</h3>
+            <div id="countdown">
+                <ul>
+                    <li class="countdown-element"><span id="days"></span>days</li>
+                    <li class="countdown-element"><span id="hours"></span>Hours</li>
+                    <li class="countdown-element"><span id="minutes"></span>Minutes</li>
+                    <li class="countdown-element"><span id="seconds"></span>Seconds</li>
+                </ul>
+            </div>
+            <div id="content" class="emoji">
+                <span>🥳</span>
+                <span>🎉</span>
+                <span>🎂</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main>
+            <div class="container-line-up">
+                <h3>Line-Up</h3>
+                <section>
+                </section>
+            </div>
+        </main>
+
+        <div class="container-gallery">
+            <h3>Foto's</h3>
+            <figure>
+                <img src="/img/background-header.jpg" alt="">
+                <img src="/img/background-header.jpg" alt="">
+                <img src="/img/background-header.jpg" alt="">
+                <img src="/img/background-header.jpg" alt="">
+                <img src="/img/background-header.jpg" alt="">
+                <img src="/img/background-header.jpg" alt="">
+            </figure>
+        </div>
+
+        <div class="container-tickets">
+            <h3>Kies je Tickets</h3>
+            <section class="box-ticket">
+                <h4>ticket name</h4>
+                <h5>€50<span>.00</span></h5>
+                <button>koop ticket</button>
+                <section>
+                    <p>Ticket voor eerste dag van het festival</p>
+                    <p>13 Mei 2022, van Termunt Tervuren</p>
+                </section>
+            </section>
+            <section class="box-ticket">
+                <h4>ticket name</h4>
+                <h5>€50<span>.00</span></h5>
+                <button>koop ticket</button>
+                <section>
+                    <p>Ticket voor tweede dag van het festival</p>
+                    <p>14 Mei 2022, van Termunt Tervuren</p>
+                </section>
+            </section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perspiciatis sint nihil et beatae sequi
+                deleniti suscipit. Voluptatum, illo facilis. Laudantium iusto nobis consequatur doloribus libero nihil
+                iste tempora ratione.</p>
+        </div>
+
+        <div class="container-partners">
+            <h3>Onze Partners</h3>
+
+            <h4>Premium Partners</h4>
+            <figure></figure>
+
+            <h4>Big Partners</h4>
+            <figure></figure>
+
+            <h4>Partners</h4>
+            <figure></figure>
+
+            <h4>Drinks &amp; Media partners</h4>
+            <figure></figure>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script src="assets/navigation.js"></script>
+    <script src="assets/countdown.js"></script>
+</body>
+
+</html>

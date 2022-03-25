@@ -1,0 +1,429 @@
+/*
+background
+#121212 dark grey
+
+logo
+#282929 grey
+#ed2224 red
+#e0d15c yellow
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    background-color: #121212;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    align-items: center;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+header {
+    background-color: #282929;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+}
+
+.wrapper h3 {
+    width: 100%;
+    text-transform: uppercase;
+    padding: 20px 0;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+footer {
+    height: 50px;
+}
+
+/* ---------------------------- nav-start ----------------------------*/
+
+.top-nav {
+    position: fixed;
+
+    width: 94%;
+    padding: 20px 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: top 0.75s ease-in;
+    background-color: transparent;
+}
+
+.top-nav .menu {
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.top-nav .menu li a {
+    display: inline-block;
+    min-width: 75px;
+    margin: 0.3em 0;
+    padding: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #282929;
+}
+
+.logo {
+    font-family: "Old English Text MT";
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+    padding: 5px 20px;
+}
+
+.top-nav .menu li a:visited {
+    color: white;
+}
+
+.top-nav .menu li a:focus,
+.top-nav .menu li a:hover,
+.top-nav .menu li a:active {
+    color: #3baf1e;
+}
+
+.top-nav .logo {
+    display: inline-block;
+    width: 150px;
+}
+
+.top-nav .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+}
+
+.top-nav .menu-icon .navicon {
+    background-color: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 25px;
+}
+
+.top-nav .menu-icon .navicon:before,
+.top-nav .menu-icon .navicon:after {
+    background-color: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+}
+
+.top-nav .menu-icon .navicon:before {
+    top: 7px;
+}
+
+.top-nav .menu-icon .navicon:after {
+    top: -7px;
+}
+
+.top-nav .menu-btn {
+    display: none;
+}
+
+.top-nav .menu-btn:checked~.menu {
+    max-height: 300px;
+}
+
+.top-nav .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+}
+
+.top-nav .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.top-nav .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.top-nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.top-nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/* ---------------------------- nav-end ----------------------------*/
+/* ---------------------------- Countdown-start ----------------------------*/
+
+:root {
+    --smaller: .75;
+}
+
+.container-countdown {
+    width: 100%;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+#headline {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+    color: #e0d15c;
+    font-size: 1.05rem;
+}
+
+#under-headline {
+    letter-spacing: .125rem;
+}
+
+.countdown-element {
+    display: inline-block;
+    font-size: 0.8em;
+    list-style-type: none;
+    padding: 40px 10px;
+    text-transform: uppercase;
+}
+
+.countdown-element span {
+    display: block;
+    font-size: 2.5rem;
+}
+
+
+.emoji {
+    display: none;
+    padding: 1rem;
+}
+
+.emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+}
+
+/* ---------------------------- Countdown-end ----------------------------*/
+/* ---------------------------- Line-up-Start ----------------------------*/
+
+.container-line-up {
+    background-color: #121212;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+/* ---------------------------- Line-up-End ----------------------------*/
+/* ---------------------------- Gallery-Start ----------------------------*/
+
+figure {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+figure img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+/* ---------------------------- Gallery-End ----------------------------*/
+/* ---------------------------- Tickets-Start ----------------------------*/
+
+.container-tickets {
+    background-color: #121212;
+    text-align: center;
+    color: white;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: auto;
+    width: 90%;
+    justify-content: center;
+}
+
+.box-ticket {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    padding: 20px 0;
+
+    min-width: 350px;
+    min-height: 500px;
+    max-height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.box-ticket h4 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 4px;
+
+    padding-bottom: 90px;
+}
+
+.box-ticket h5 {
+    font-size: 5rem;
+    padding-bottom: 50px;
+}
+
+.box-ticket h5 span {
+    font-size: 2rem;
+    vertical-align: top;
+}
+
+.container-tickets p {
+    width: 100%;
+}
+
+button {
+    border: 3px solid white;
+    background-color: transparent;
+    width: 80%;
+    padding: 10px 0;
+
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: -1px;
+    color: white;
+}
+
+/* ---------------------------- Tickets-End ----------------------------*/
+
+@media (min-width: 481px) {
+
+    /* st portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+
+}
+
+@media (min-width:641px) {
+    /* lp portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
+    #headline {
+        font-size: 1.80rem;
+    }
+
+    #under-headline {
+        font-size: 1.60rem;
+    }
+
+    .countdown-element {
+        font-size: 1.5rem;
+        ;
+    }
+
+    .countdown-element span {
+        font-size: 4.5rem;
+    }
+
+    figure {
+        justify-content: space-between;
+    }
+
+    figure img {
+        width: 49%;
+        padding: 1% 0;
+    }
+
+    .container-tickets {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container-tickets p {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .box-ticket {
+        width: 42%;
+        max-width: 400px;
+        margin: 10px;
+    }
+
+}
+
+@media (min-width: 768px) {}
+
+@media (min-height: 800px) and (orientation:landscape) {
+    #second-nav {
+        display: none;
+    }
+}
+
+@media (min-width:870px) {
+
+    /* navigation bar */
+    .top-nav li {
+        margin: 0 10px;
+    }
+
+    .top-nav .menu {
+        width: auto;
+        max-height: none;
+        flex-direction: row;
+    }
+
+    .top-nav .menu-icon {
+        display: none;
+    }
+
+}
+
+@media (min-width:961px) {
+
+    figure img {
+        width: 32%;
+        padding: 1% 0;
+    }
+
+    /* t tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media (min-width: 1025px) {
+    /* pc big landscape tablets, laptops, and desktops */
+
+
+
+}
+
+
+@media (min-width:1281px) {
+    /* bpc hi-res laptops and desktops */
+
+
+
+}
+
+.wrapper {
+    background-color: white;
+}
